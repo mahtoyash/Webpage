@@ -1624,3 +1624,87 @@ a:hover {
     z-index: 1;
 }
 
+
+
+
+/*Responsive screen Now its not working on some devices but will be fixed soon*/
+
+@media (max-width: 1024px) {
+    .ticker-item-projects {
+        font-size: 4.5rem;
+        letter-spacing: 1rem;
+    }
+    
+    .projects-container {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 40px;
+        padding: 60px 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    #projects {
+        padding: 100px 0 150px 0;
+        margin-bottom: 50px;
+    }
+    
+    .ticker-item-projects {
+        font-size: 3rem;
+        letter-spacing: 0.5rem;
+    }
+    
+    .projects-container {
+        grid-template-columns: 1fr;
+        padding: 40px 20px;
+        gap: 35px;
+    }
+    
+    .project-title {
+        font-size: 0.95rem;
+    }
+    
+    .project-desc {
+        font-size: 0.9rem;
+    }
+    
+    .filter-container {
+        gap: 10px;
+    }
+    
+    .filter-btn {
+        padding: 10px 20px;
+        font-size: 0.75rem;
+    }
+    
+    .container2 {
+        padding-top: 100px;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 430px) {
+    .ticker-item-projects {
+        font-size: 2rem;
+        letter-spacing: 0.3rem;
+    }
+    
+    .project-card {
+        padding: 25px;
+    }
+}
+
+
+.spacer-section {
+    width: 100%;
+    height: 220px; /* Adjust as needed */
+    background: #000;
+    position: relative;
+    z-index: 4;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .spacer-section {
+        height: 200px;
+    }
+}
